@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nexus3D — Immersive Web Experience
 
-## Getting Started
+An immersive Next.js 3D web application featuring a stunning cyberpunk hero section, interactive 3D elements, and a modular architecture.
 
-First, run the development server:
+## Features
 
+- **Next.js 16 (App Router)**: Blazing fast server-side rendered application.
+- **Immersive 3D Experience (Three.js & React Three Fiber)**: Complex cyberpunk scene with dynamic lighting, glowing geometric shapes, particle fields, and a neon grid floor.
+- **Smooth Animations (Framer Motion)**: Page transitions, hover effects, and scroll-triggered parallax.
+- **Responsive Design (TailwindCSS v4)**: Fully responsive layouts with glassmorphism UI components.
+- **Advanced Camera Rig**: Mouse-reactive 3D camera with scrolling depth parallax effects.
+
+## Quick Start
+
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Architecture & Folder Structure
 
-## Learn More
+- `src/app/` — Next.js routing, global styles, and layout.
+- `src/components/` — Reusable UI and 3D components (e.g., `CyberpunkScene`, `CameraRig`, `AnimatedCard`, `Navbar`).
+- `src/sections/` — Main page sections composing the landing page.
+- `src/hooks/` — Custom React hooks for animations and interactivity (`useMousePosition`, `useScrollAnimation`).
+- `src/styles/` & `src/utils/` — Design tokens, fonts, and animation variants.
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Framework**: [Next.js](https://nextjs.org/)
+- **3D Graphics**: [Three.js](https://threejs.org/), [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber), [@react-three/drei](https://github.com/pmndrs/drei)
+- **Styling**: [TailwindCSS](https://tailwindcss.com/)
+- **Animation**: [Motion (Framer Motion)](https://motion.dev/)
